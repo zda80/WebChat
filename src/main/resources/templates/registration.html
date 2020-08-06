@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+<body>
+<div id="registrationPage">
+    <h1 class="title">Registration</h1>
+    <form id="regForm" name="regForm" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="username" path="username"/><p>
+            <label>Password:</label><br>
+            <input type="password" name="password" path="password"/><p>
+            <label>Confirm your Password:</label><br>
+            <input type="password" name="passwordConfirm" path="passwordConfirm"/><p>
+            <div th:text="${error}"></div><p>
+            <button type="submit">Registration</button><p>
+            <a style="color: #ffff00" href="/">Back to the main Paige</a>
+    </form>
+</div>
+</body>
+</html>
